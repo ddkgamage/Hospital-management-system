@@ -4,6 +4,9 @@ For clone the project
 To install all packages 
 # npm install
 
+To start project
+# npm start
+
 Hospital Management System Project ----
 
 Hospital Management System is an organized computerized system designed 
