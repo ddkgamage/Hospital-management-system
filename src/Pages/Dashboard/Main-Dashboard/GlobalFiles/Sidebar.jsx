@@ -58,6 +58,24 @@ const Sidebar = () => {
               </div>
             </Link>
 
+            {user?.userType === "admin" ? (
+              <Link
+                className="link"
+                activeclassname="active"
+                to={"/bookappointment"}
+              >
+                <div className="icon">
+                  <BsBookmarkPlus className="mainIcon" />
+                </div>
+                <div
+                  style={{ display: isOpen ? "block" : "none" }}
+                  className="link_text"
+                >
+                  Appointments
+                </div>
+              </Link>
+            ) : null}
+
             {user?.userType === "nurse" ? (
               <Link
                 className="link"
@@ -119,11 +137,11 @@ const Sidebar = () => {
                   style={{ display: isOpen ? "block" : "none" }}
                   className="link_text"
                 >
-                  Add Doctor
+                  Doctors
                 </div>
               </Link>
             ) : null}
-            {user?.userType === "admin" ? (
+            {/* {user?.userType === "admin" ? (
               <Link className="link" activeclassname="active" to={"/addnurse"}>
                 <div className="icon">
                   <GiNurseFemale className="mainIcon" />
@@ -135,8 +153,8 @@ const Sidebar = () => {
                   Add Nurse
                 </div>
               </Link>
-            ) : null}
-            {user?.userType === "admin" ? (
+            ) : null} */}
+            {/* {user?.userType === "admin" ? (
               <Link className="link" activeclassname="active" to={"/admin"}>
                 <div className="icon">
                   <RiAdminLine
@@ -151,8 +169,8 @@ const Sidebar = () => {
                   Add Admin
                 </div>
               </Link>
-            ) : null}
-
+            ) : null} */}
+{/* 
             {user?.userType === "admin" ? (
               <Link className="link" activeclassname="active" to={"/addbeds"}>
                 <div className="icon">
@@ -165,7 +183,7 @@ const Sidebar = () => {
                   Add Beds
                 </div>
               </Link>
-            ) : null}
+            ) : null} */}
 
             {/* {user?.userType === "admin" ? (
               <Link

@@ -90,7 +90,7 @@ const DLogin = () => {
             notify("Something went Wrong, Please Try Again");
           }
         });
-      } else if (placement === "Admin") {
+      } else if (placement === "Patient") {
         let data = {
           ...formvalue,
           adminID: formvalue.ID,
@@ -174,8 +174,8 @@ const DLogin = () => {
               <Radio.Button value="Doctor" className={"radiobutton"}>
                 Doctor
               </Radio.Button>
-              <Radio.Button value="Admin" className={"radiobutton"}>
-                Admin
+              <Radio.Button value="Patient" className={"radiobutton"}>
+                Patient
               </Radio.Button>
             </Radio.Group>
           </div>
@@ -232,7 +232,7 @@ const DLogin = () => {
                     <option value="">User Type</option>
                     <option value="nurse">Nurse</option>
                     <option value="doctor">Doctor</option>
-                    <option value="admin">Admin</option>
+                    <option value="patient">Patient</option>
                   </select>
                 </div>
                 <div>

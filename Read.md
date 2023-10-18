@@ -1,11 +1,8 @@
 For clone the project
-## git clone https://github.com/ddkgamage/Hospital-management-system.git
+# git clone https://github.com/ddkgamage/Hospital-management-system.git
 
 To install all packages 
-## npm install
-
-To start project
-## npm start
+# npm install
 
 Hospital Management System Project ----
 
@@ -16,7 +13,7 @@ records, database treatments, status illness, billings in the pharmacy,
 and labs.
 
 Technology Stack
-## React
-## MySQL database includes ( currently not enable )
+# React
+# MySQL database includes ( currently not enable )
 
 
