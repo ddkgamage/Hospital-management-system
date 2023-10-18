@@ -75,7 +75,7 @@ const Add_Admin = () => {
             <h1>Add Admin</h1>
             <img src={admin} alt="doctor" className="avatarimg" />
             <form onSubmit={HandleDoctorSubmit}>
-              <div>
+              {/* <div>
                 <label>Name</label>
                 <div className="inputdiv">
                   <input
@@ -87,7 +87,25 @@ const Add_Admin = () => {
                     required
                   />
                 </div>
+              </div> */}
+
+              <div>
+                <label>Doctor Name</label>
+                <div className="inputdiv">
+                  <select
+                    name="name"
+                    value={AdminValue.name}
+                    onChange={HandleDoctorChange}
+                    required
+                  >
+                    
+                    <option value="Dr.KamalGamage<">Dr. Kamal gamage</option>
+                    <option value="Dr.ChithraRupasinghe">Dr. Chithra rupasinghe</option>
+                    <option value="Dr.KapilaBasnayake">Dr. Kapila Basnayake</option>
+                  </select>
+                </div>
               </div>
+
               <div>
                 <label>Age</label>
                 <div className="inputdiv">

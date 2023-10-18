@@ -78,23 +78,26 @@ const AddDoctor = () => {
         <Sidebar />
         <div className="AfterSideBar">
           <div className="Main_Add_Doctor_div">
-            <h1>Add Doctors</h1>
+            <h1>Channel Doctors</h1>
             <img src={doctor} alt="doctor" className="avatarimg" />
             <form onSubmit={HandleDoctorSubmit}>
-              <div>
-                <label>Doctor Name</label>
+            <div>
+                <label>Name</label>
                 <div className="inputdiv">
-                  <input
-                    type="text"
-                    placeholder="Full Name"
-                    name="docName"
-                    value={DoctorValue.docName}
+                  <select
+                    name="name"
+                    value={DoctorValue.name}
                     onChange={HandleDoctorChange}
                     required
-                  />
+                  >
+                    <option value="Choose Name">Choose name</option>
+                    <option value="Male">Dr.Kamal Gamage</option>
+                    <option value="Female">Dr.Kushan Edirisinghe</option>
+                    <option value="Others">Dr.Chandra Jayasooriya</option>
+                  </select>
                 </div>
               </div>
-              <div>
+              {/* <div>
                 <label>Age</label>
                 <div className="inputdiv">
                   <input
@@ -106,8 +109,8 @@ const AddDoctor = () => {
                     required
                   />
                 </div>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <label>Emergency Number</label>
                 <div className="inputdiv">
                   <input
@@ -119,8 +122,8 @@ const AddDoctor = () => {
                     required
                   />
                 </div>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <label>Email</label>
                 <div className="inputdiv">
                   <input
@@ -132,24 +135,30 @@ const AddDoctor = () => {
                     required
                   />
                 </div>
-              </div>
+              </div> */}
               <div>
-                <label>Gender</label>
+                <label>Specialization</label>
                 <div className="inputdiv">
                   <select
-                    name="gender"
-                    value={DoctorValue.gender}
+                    name="specialization"
+                    value={DoctorValue.specialization}
                     onChange={HandleDoctorChange}
                     required
                   >
-                    <option value="Choose Gender">Choose Gender</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Others">Others</option>
+                    <option value="Choose Specialization">Choose Specialization</option>
+                    <option value="Male">Allergists/Immunologists</option>
+                    <option value="Female">Anesthesiologists</option>
+                    <option value="Others">Cardiologists</option>
+                    <option value="Male">Colon and Rectal Surgeons</option>
+                    <option value="Female">Critical Care Medicine Specialists</option>
+                    <option value="Others">Dermatologists</option>
+                    <option value="Male">Endocrinologists</option>
+                    <option value="Female">Emergency Medicine Specialists</option>
+                    <option value="Others">Gastroenterologists</option>
                   </select>
                 </div>
               </div>
-              <div>
+              {/* <div>
                 <label>Blood Group</label>
                 <div className="inputdiv">
                   <select
@@ -169,9 +178,9 @@ const AddDoctor = () => {
                     <option value="O-">O-</option>
                   </select>
                 </div>
-              </div>
+              </div> */}
               <div>
-                <label>Birthdate</label>
+                <label>Date</label>
                 <div className="inputdiv">
                   <input
                     type="date"
@@ -183,7 +192,7 @@ const AddDoctor = () => {
                   />
                 </div>
               </div>
-              <div>
+              {/* <div>
                 <label>Address</label>
                 <div className="inputdiv adressdiv">
                   <input
@@ -195,8 +204,8 @@ const AddDoctor = () => {
                     required
                   />
                 </div>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <label>Education</label>
                 <div className="inputdiv">
                   <input
@@ -208,8 +217,8 @@ const AddDoctor = () => {
                     required
                   />
                 </div>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <label>Department</label>
                 <div className="inputdiv">
                   <select
@@ -229,9 +238,9 @@ const AddDoctor = () => {
                     <option value="Psychiatrist">Psychiatrist</option>
                   </select>
                 </div>
-              </div>
+              </div> */}
 
-              <div>
+              {/* <div>
                 <label>Password</label>
                 <div className="inputdiv">
                   <input
@@ -243,8 +252,8 @@ const AddDoctor = () => {
                     required
                   />
                 </div>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <label>Other Details</label>
                 <div className="inputdiv">
                   <textarea
@@ -258,7 +267,7 @@ const AddDoctor = () => {
                     required
                   />
                 </div>
-              </div>
+              </div> */}
               <button type="submit" className="formsubmitbutton">
                 {loading ? "Loading..." : "Submit"}
               </button>
