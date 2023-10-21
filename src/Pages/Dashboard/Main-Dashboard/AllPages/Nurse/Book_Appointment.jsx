@@ -134,7 +134,7 @@ const Book_Appointment = () => {
                 </div>
               </div>
               {/* PROBLEM PLACEHOLDER */}
-              <div>
+              {/* <div>
                 <label>Type of Disease</label>
                 <div className="inputdiv">
                   <select
@@ -155,7 +155,7 @@ const Book_Appointment = () => {
                     })}
                   </select>
                 </div>
-              </div>
+              </div> */}
 
               {/* ENTER SAMPLE DISEASE */}
 

@@ -97,45 +97,6 @@ const AddDoctor = () => {
                   </select>
                 </div>
               </div>
-              {/* <div>
-                <label>Age</label>
-                <div className="inputdiv">
-                  <input
-                    type="number"
-                    placeholder="Age"
-                    name="age"
-                    value={DoctorValue.age}
-                    onChange={HandleDoctorChange}
-                    required
-                  />
-                </div>
-              </div> */}
-              {/* <div>
-                <label>Emergency Number</label>
-                <div className="inputdiv">
-                  <input
-                    type="number"
-                    placeholder="Emergency Number"
-                    name="mobile"
-                    value={DoctorValue.mobile}
-                    onChange={HandleDoctorChange}
-                    required
-                  />
-                </div>
-              </div> */}
-              {/* <div>
-                <label>Email</label>
-                <div className="inputdiv">
-                  <input
-                    type="email"
-                    placeholder="abc@abc.com"
-                    name="email"
-                    value={DoctorValue.email}
-                    onChange={HandleDoctorChange}
-                    required
-                  />
-                </div>
-              </div> */}
               <div>
                 <label>Specialization</label>
                 <div className="inputdiv">
@@ -156,6 +117,105 @@ const AddDoctor = () => {
                     <option value="Female">Emergency Medicine Specialists</option>
                     <option value="Others">Gastroenterologists</option>
                   </select>
+                </div>
+              </div>
+              <div>
+                <label>Patient NIC</label>
+                <div className="inputdiv adressdiv">
+                  <input
+                    type="text"
+                    placeholder="NIC"
+                    name="address"
+                    value={DoctorValue.address}
+                    onChange={HandleDoctorChange}
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label>Patient Name</label>
+                <div className="inputdiv">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    name="education"
+                    value={DoctorValue.education}
+                    onChange={HandleDoctorChange}
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label>Age</label>
+                <div className="inputdiv">
+                  <input
+                    type="number"
+                    placeholder="Age"
+                    name="age"
+                    value={DoctorValue.age}
+                    onChange={HandleDoctorChange}
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label>Gender</label>
+                <div className="inputdiv">
+                  <select
+                    name="gender"
+                    value={DoctorValue.department}
+                    onChange={HandleDoctorChange}
+                    required
+                  >
+                    <option value="General">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    {/* <option value="ENT">ENT</option>
+                    <option value="Ophthalmologist">Ophthalmologist</option>
+                    <option value="Anesthesiologist">Anesthesiologist</option>
+                    <option value="Dermatologist">Dermatologist</option>
+                    <option value="Oncologist">Oncologist</option>
+                    <option value="Psychiatrist">Psychiatrist</option> */}
+                  </select>
+                </div>
+                </div>
+              <div>
+                <label>Contact Number</label>
+                <div className="inputdiv">
+                  <input
+                    type="number"
+                    placeholder="Contact Number"
+                    name="mobile"
+                    value={DoctorValue.mobile}
+                    onChange={HandleDoctorChange}
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label>Email</label>
+                <div className="inputdiv">
+                  <input
+                    type="email"
+                    placeholder="abc@abc.com"
+                    name="email"
+                    value={DoctorValue.email}
+                    onChange={HandleDoctorChange}
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label>Address</label>
+                <div className="inputdiv">
+                  <input
+                    type="text"
+                    placeholder="Address"
+                    name="password"
+                    value={DoctorValue.password}
+                    onChange={HandleDoctorChange}
+                    required
+                  />
                 </div>
               </div>
               {/* <div>
@@ -179,8 +239,9 @@ const AddDoctor = () => {
                   </select>
                 </div>
               </div> */}
+              
               <div>
-                <label>Date</label>
+                <label>Date and Time</label>
                 <div className="inputdiv">
                   <input
                     type="date"
@@ -192,67 +253,8 @@ const AddDoctor = () => {
                   />
                 </div>
               </div>
-              {/* <div>
-                <label>Address</label>
-                <div className="inputdiv adressdiv">
-                  <input
-                    type="text"
-                    placeholder="Address"
-                    name="address"
-                    value={DoctorValue.address}
-                    onChange={HandleDoctorChange}
-                    required
-                  />
-                </div>
-              </div> */}
-              {/* <div>
-                <label>Education</label>
-                <div className="inputdiv">
-                  <input
-                    type="text"
-                    placeholder="eg.MBBS"
-                    name="education"
-                    value={DoctorValue.education}
-                    onChange={HandleDoctorChange}
-                    required
-                  />
-                </div>
-              </div> */}
-              {/* <div>
-                <label>Department</label>
-                <div className="inputdiv">
-                  <select
-                    name="department"
-                    value={DoctorValue.department}
-                    onChange={HandleDoctorChange}
-                    required
-                  >
-                    <option value="General">Select</option>
-                    <option value="Cardiology">Cardiology</option>
-                    <option value="Neurology">Neurology</option>
-                    <option value="ENT">ENT</option>
-                    <option value="Ophthalmologist">Ophthalmologist</option>
-                    <option value="Anesthesiologist">Anesthesiologist</option>
-                    <option value="Dermatologist">Dermatologist</option>
-                    <option value="Oncologist">Oncologist</option>
-                    <option value="Psychiatrist">Psychiatrist</option>
-                  </select>
-                </div>
-              </div> */}
+                            
 
-              {/* <div>
-                <label>Password</label>
-                <div className="inputdiv">
-                  <input
-                    type="text"
-                    placeholder="Password"
-                    name="password"
-                    value={DoctorValue.password}
-                    onChange={HandleDoctorChange}
-                    required
-                  />
-                </div>
-              </div> */}
               {/* <div>
                 <label>Other Details</label>
                 <div className="inputdiv">
