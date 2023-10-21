@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import DLogin from "../Pages/Dashboard/Dashboard-Login/DLogin";
 import AddBeds from "../Pages/Dashboard/Main-Dashboard/AllPages/Admin/AddBeds";
 import Add_Admin from "../Pages/Dashboard/Main-Dashboard/AllPages/Admin/Add_Admin";
+import Feedback from "../Pages/Dashboard/Main-Dashboard/AllPages/Admin/Feedback";
 // import Add_Ambulance from "../Pages/Dashboard/Main-Dashboard/AllPages/Admin/Add_Ambulance";
 import AddDoctor from "../Pages/Dashboard/Main-Dashboard/AllPages/Admin/Add_Doctor";
 import Add_Nurse from "../Pages/Dashboard/Main-Dashboard/AllPages/Admin/Add_Nurse";
@@ -24,6 +25,7 @@ const AllRoutes = () => {
         <Route path="/" element={<DLogin />} />
         <Route path="/dashboard" element={<FrontPage />} />
         <Route path="/addoctor" element={<AddDoctor />} />
+        <Route path="/addfeedback" element={<Feedback />} />
         {/* <Route path="/addambulance" element={<Add_Ambulance />} /> */}
         <Route path="/addnurse" element={<Add_Nurse />} />
         <Route path="/rooms" element={<Beds_Rooms />} />

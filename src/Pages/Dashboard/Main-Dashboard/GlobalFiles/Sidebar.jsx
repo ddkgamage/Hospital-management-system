@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineUserAdd } from "react-icons/ai";
+import {AiOutlineComment} from "react-icons/ai";
 import { FaAmbulance } from "react-icons/fa";
 import { GiNurseFemale } from "react-icons/gi";
 import { RiSecurePaymentLine } from "react-icons/ri";
@@ -58,7 +59,7 @@ const Sidebar = () => {
               </div>
             </Link>
 
-            {user?.userType === "admin" ? (
+            {/* {user?.userType === "admin" ? (
               <Link
                 className="link"
                 activeclassname="active"
@@ -74,7 +75,7 @@ const Sidebar = () => {
                   Appointments
                 </div>
               </Link>
-            ) : null}
+            ) : null} */}
 
             {user?.userType === "nurse" ? (
               <Link
@@ -131,13 +132,13 @@ const Sidebar = () => {
             {user?.userType === "admin" ? (
               <Link className="link" activeclassname="active" to={"/addoctor"}>
                 <div className="icon">
-                  <AiOutlineUserAdd className="mainIcon" />
+                  <BsBookmarkPlus className="mainIcon" />
                 </div>
                 <div
                   style={{ display: isOpen ? "block" : "none" }}
                   className="link_text"
                 >
-                  Doctors
+                  Appointments
                 </div>
               </Link>
             ) : null}
@@ -237,6 +238,8 @@ const Sidebar = () => {
                 </div>
               </Link>
             ) : null}
+
+          {user?.userType === "nurse" ? (
             <Link className="link" activeclassname="active" to={"/rooms"}>
               <div className="icon">
                 <MdBedroomChild className="mainIcon" />
@@ -248,6 +251,7 @@ const Sidebar = () => {
                 Beds
               </div>
             </Link>
+             ) : null}
             {user?.userType === "doctor" ? (
               <Link className="link" activeclassname="active" to={"/reports"}>
                 <div className="icon">
@@ -292,6 +296,19 @@ const Sidebar = () => {
                   className="link_text"
                 >
                   Create Report
+                </div>
+              </Link>
+            ) : null}
+            {user?.userType === "admin" ? (
+              <Link className="link" activeclassname="active" to={"/addfeedback"}>
+                <div className="icon">
+                  <AiOutlineComment className="mainIcon" />
+                </div>
+                <div
+                  style={{ display: isOpen ? "block" : "none" }}
+                  className="link_text"
+                >
+                  Feedback
                 </div>
               </Link>
             ) : null}
