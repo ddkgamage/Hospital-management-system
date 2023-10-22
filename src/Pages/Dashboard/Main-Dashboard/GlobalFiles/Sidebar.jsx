@@ -5,7 +5,7 @@ import { FaAmbulance } from "react-icons/fa";
 import { GiNurseFemale } from "react-icons/gi";
 import { RiSecurePaymentLine } from "react-icons/ri";
 import { SlUserFollow } from "react-icons/sl";
-import { BsBookmarkPlus, BsFillBookmarkCheckFill } from "react-icons/bs";
+import { BsBookmarkPlus, BsFillBookmarkCheckFill, BsNewspaper } from "react-icons/bs";
 import { BiDetail } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
 import { FaHospitalUser } from "react-icons/fa";
@@ -59,23 +59,6 @@ const Sidebar = () => {
               </div>
             </Link>
 
-            {user?.userType === "doctor" ? (
-              <Link
-                className="link"
-                activeclassname="active"
-                to={"/addprescription"}
-              >
-                <div className="icon">
-                  <BsBookmarkPlus className="mainIcon" />
-                </div>
-                <div
-                  style={{ display: isOpen ? "block" : "none" }}
-                  className="link_text"
-                >
-                  Prescription
-                </div>
-              </Link>
-            ) : null}
 
             {user?.userType === "nurse" ? (
               <Link
@@ -220,6 +203,24 @@ const Sidebar = () => {
                 </div>
               </Link>
             ) : null} */}
+            
+            {user?.userType === "doctor" ? (
+              <Link
+                className="link"
+                activeclassname="active"
+                to={"/addprescription"}
+              >
+                <div className="icon">
+                  <BsNewspaper className="mainIcon" />
+                </div>
+                <div
+                  style={{ display: isOpen ? "block" : "none" }}
+                  className="link_text"
+                >
+                  Prescription
+                </div>
+              </Link>
+            ) : null}
 
             {user?.userType === "doctor" ? (
               <Link
