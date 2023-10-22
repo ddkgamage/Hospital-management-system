@@ -59,11 +59,11 @@ const Sidebar = () => {
               </div>
             </Link>
 
-            {/* {user?.userType === "admin" ? (
+            {user?.userType === "doctor" ? (
               <Link
                 className="link"
                 activeclassname="active"
-                to={"/bookappointment"}
+                to={"/addprescription"}
               >
                 <div className="icon">
                   <BsBookmarkPlus className="mainIcon" />
@@ -72,10 +72,10 @@ const Sidebar = () => {
                   style={{ display: isOpen ? "block" : "none" }}
                   className="link_text"
                 >
-                  Appointments
+                  Prescription
                 </div>
               </Link>
-            ) : null} */}
+            ) : null}
 
             {user?.userType === "nurse" ? (
               <Link

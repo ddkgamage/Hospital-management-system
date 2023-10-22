@@ -22,6 +22,7 @@ import ref5 from './../../../../img/ref5.jpeg';
 const FrontPage = () => {
   const columns = [
     { title: "Name", dataIndex: "patientName", key: "patientName" },
+    { title: "NIC No.", dataIndex: "nic", key: "nic" },
     { title: "Age", dataIndex: "age", key: "age" },
     { title: "Disease", dataIndex: "disease", key: "disease" },
     { title: "Blood Group", dataIndex: "bloodGroup", key: "bloodGroup" },
@@ -133,7 +134,7 @@ const FrontPage = () => {
         </div>
         {user?.userType === "admin" ? (
         <div className="patientDetails">
-          <h1>Diet Plans</h1>
+          <h1>General Information</h1>
           <div className="row d-flex">
             {/* <div className="patientBox"> */}
               <div className="col-12">
@@ -165,35 +166,35 @@ const FrontPage = () => {
                     
                         <tr>
                           <td>A +</td>
-                          <td>Available</td>
+                          <td>5 liters</td>
                         </tr>
                         <tr>
                           <td>A -</td>
-                          <td>Available</td>
+                          <td>10 liters</td>
                         </tr>
                         <tr>
                           <td>B +</td>
-                          <td>Available</td>
+                          <td>8 liters</td>
                         </tr>
                         <tr>
                           <td>B -</td>
-                          <td>Available</td>
+                          <td>20 liters</td>
                         </tr>
                         <tr>
                           <td>O +</td>
-                          <td>Available</td>
+                          <td>15 liters</td>
                         </tr>
                         <tr>
                           <td>O -</td>
-                          <td>Available</td>
+                          <td>9 liters</td>
                         </tr>
                         <tr>
                           <td>AB +</td>
-                          <td>Available</td>
+                          <td>25 liters</td>
                         </tr>
                         <tr>
                           <td>AB -</td>
-                          <td>Available</td>
+                          <td>16 liters</td>
                         </tr>
                     
                   </tbody>
